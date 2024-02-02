@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tính toán</title>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="operation">
+                <div class="content_input">
+                    <p>Number A(*)</p>
+                    <input type="number" name="" id="number_A">
+                    <p>Number B(*)</p>
+                    <input type="number" name="" id="number_B">
+                </div>
+                <div class="content_operation">
+                    <div class="title_operation">
+                        <p>Summation:</p>
+                        <p>Subtraction:</p>
+                        <p>Multiplication:</p>
+                        <p>Division:</p>
+                    </div>
+                    <div class="button_operation">
+                        <button onclick="summation(number_A.value,number_B.value)">+</button>
+                        <button onclick="subtraction(number_A.value,number_B.value)">-</button>
+                        <button onclick="multiplication(number_A.value,number_B.value)">*</button>
+                        <button onclick="division(number_A.value,number_B.value)">/</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="result">
+                    <p>Result A & B</p>
+                    <input type="text" name="" id="result" readonly>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
